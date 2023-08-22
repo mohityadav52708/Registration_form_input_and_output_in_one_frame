@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  
+  <title>Registration input and output form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2 style="color: white;">Registration Form</h2>
+      <form id="profile-form">
+      
+        <br>
+        <label for="name">Name:</label>
+        <!-- <input type="file" id="profile-pic" accept="image/*"> -->
+        <br>
+        <input type="text" id="name" name="name" required>
+          <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+          <br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password" name="password" required>
+        <br>
+  
+        <label>Gender:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other" required>
+        <label for="other">Other</label>
+        <br><br>
+        <label>Skills:</label>
+       
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label>
+        
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label>
+       
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js">JavaScript</label>
+      
+        <input type="checkbox" id="python" name="skills" value="Python">
+        <label for="python">Python</label>
+        <br><br><br>
+        <input type="file" id="profile-pic" accept="image/*">
+    <br>
+        <br><br>
+  
+        <center><button type="submit">Register</button></center>
+      </form>     
+    </div>
+
+    <div class="profile-card" id="profile-card">
+      <h2 style="color:black">Registration Details</h2>
+    </div>
+  </div>
+
+  <script src="aap.js">
+
+  </script>
+</body>
+</html>

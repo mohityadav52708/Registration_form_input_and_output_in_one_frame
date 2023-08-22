@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  #registrationForm img{
+    width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+  }
+</style>
+<body>
+
+    <div class="container">
+      <div class="content">
+        <form id="registrationForm">
+          <h2>Registration Form</h2><br>
+          
+
+          <label for="name">Name:</label>
+          <!-- <input type="file" id="profile-pic" accept="image/*"> -->
+          <br>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="Male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female" required>
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="Other" required>
+          <label for="other">Other</label>
+          <br><br>
+          <label>Skills:</label>
+         
+          <input type="checkbox" id="html" name="skills" value="HTML">
+          <label for="html">HTML</label>
+          
+          <input type="checkbox" id="css" name="skills" value="CSS">
+          <label for="css">CSS</label>
+         
+          <input type="checkbox" id="js" name="skills" value="JavaScript">
+          <label for="js">JavaScript</label>
+        
+          <input type="checkbox" id="python" name="skills" value="Python">
+          <label for="python">Python</label>
+          <br>
+          <!-- <label for="profilePic">Profile Picture:</label>
+      <input type="file" id="profilePic" name="profilePic" accept="image/*" onchange="previewProfilePic(event)">
+
+      <div id="profilePicPreview"></div> -->
+      <!-- <input type="file" id="profile-pic" accept="image/*"> -->
+      <br>
+          <br><br>
+    
+          <center><button type="submit">Register</button></center>
+        </form>
+         
+        </form>
+      </div>
+      <div class="outputcontainer">
+        <div id="output"></div>
+      </div>
+ 
+  </div>
+  <script src="aap.js"></script>
+  </script>
+</body>
+
+</html>
+
+<!-- <style>
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 430px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 20px;
+      color: white;
+      margin-left: 20rem;
+    }
+    
+    .form-container label,
+    .form-container input,
+    .form-container button {
+      margin-bottom: 10px;
+    }
+    
+    .profile-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 430px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-left: 20px;
+    }
+    
+    .profile-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    
+    .profile-card p {
+      margin: 5px 0;
+    }
+   
+  </style> -->
+
+  / document.getElementById("profile-form").addEventListener("submit", function(event) {
+    //   event.preventDefault();
+    //   var name = document.getElementById("name").value;
+    //   var email = document.getElementById("email").value;
+    //   var password = document.getElementById("password").value;
+    //   var gender = document.querySelector('input[name="gender"]:checked').value;
+    //   var profilePic = document.getElementById("profile-pic").files[0];
+
+
+    //       var skills = [];
+    // var skillCheckboxes = document.querySelectorAll('input[name="skills"]:checked');
+    // skillCheckboxes.forEach(function(skillCheckbox) {
+    //   skills.push(skillCheckbox.value);
+    // });
+
+    //   var reader = new FileReader();
+    //   reader.onload = function(e) {
+    //     var profileImg = document.createElement("img");
+    //     profileImg.src = e.target.result;
+
+    //     var profileCard = document.getElementById("profile-card");
+    //     profileCard.innerHTML = "";
+    //     profileCard.innerHTML += "<h2><strong>Registration Details</strong> </h2>";
+    //     profileCard.appendChild(profileImg);
+
+    //     profileCard.innerHTML += "<p><strong>Name:</strong> " + name + "</p>";
+    //     profileCard.innerHTML += "<p><strong>Email:</strong> " + email + "</p>";
+    //     profileCard.innerHTML += "<p><strong>Password:</strong> " + password + "</p>";
+    //     profileCard.innerHTML += "<p><strong>Gender:</strong> " + gender + "</p>";
+    //     profileCard.innerHTML += "<p><strong>Skills:</strong> " + skills + "</p>";
+    //   }
+
+    //   if (profilePic) {
+    //     reader.readAsDataURL(profilePic);
+    //   }
+    // });
